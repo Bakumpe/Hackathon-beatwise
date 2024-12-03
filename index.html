@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatwise-Hackathon</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="text-gray-800 bg-gray-300">
+<!--navbar this should remain fixed when some one scrolls down-->
+    <header class="navbar bg-gray-700 text-gray-300 p-4 flex justify-between fixed top-0 z-[2] w-full m-3">
+        <div class="flex items-center justify-between">
+            <h1 class="md:text-5xl uppercase">
+                Beatwise-Hackathon
+            </h1>
+            <div class="px-4 cursor-pointer md:hidden justify-end" id="burger">
+                <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>  
+        </div>    
+        <nav><!--To be toggled on small screens-->
+            <ul class="md:space-x-4 hidden md:flex" id="menu">
+                <li class=" font-bold md:p-4  rounded-3xl  
+                text-center text-gray-200  md:text-gray-200  hover:bg-yellow-300 hover:text-gray-700">
+                    <a href="#section1">
+                    Home
+                    </a>
+                </li>
+                <li class=" font-bold md:p-4  rounded-3xl
+                text-center text-gray-200 md:text-gray-200 hover:bg-yellow-300 hover:text-gray-700">
+                    <a href="#section2">
+                    Event
+                    </a>
+                </li>
+                <li class=" font-bold md:p-4  rounded-3xl 
+                text-center text-gray-200 md:text-gray-200 hover:bg-yellow-300 hover:text-gray-700">
+                    <a href="#section3">
+                    Register
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br class="">
+<!--mainboday-->      
+    <main id="section1" class="flex flex-col items-center justify-center mt-20 p-10">
+        <!--Event Details and banner-->
+        <div class="hero min-h-full  bg-[url('/public/imgs/hacker.jpg')] bg-cover bg-opacity-90 -mt-10 font-bold text-2xl text-center text-gray-200 w-full border-white  rounded-lg shadow-lg">
+                <h2 class="md:text-4xl"> Welcome to the Beatwise Hackathon 2024</h2>
+                <p class="md:text-3xl"> Innovation For Problem Solving </p><br>
+                <p class="text-sm md:text-2xl">Join us at the Kanzucode Hackathon! Innovate, 
+                    collaborate, and compete with the brightest minds on
+                    December 02, 2024. Don't miss the chance to showcase 
+                    your skills and win exciting prizes. See you there!
+                </p>
+        </div>
+
+<!--Event Banner-->
+        <div id="section2" class="p-4 mt-4 md:text-4xl text-lg underline font-bold text-center
+        bg-gray-200 text-gray-800">
+            <h2>
+                Register with the following categories
+            </h2>
+        </div>
+        <div class="mt-2 grid lg:grid-cols-3 gap-6 p-4">
+            <div class="card hover:shadow-2xl  border-gray-200 bg-gray-200">
+                <img src="/public/imgs/frontend.jpg" alt="frontend" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m">
+                    <span class="font-bold my-2">FrontEnd Developers</span>
+                    <span class="block text-gray-800 text-sm p-2
+                     bg-yellow-500 rounded-full w-20 text-center hover:bg-gray-400 cursor-pointer">
+                        Register
+                    </span> 
+                </div>
+                <div class="badge">
+                    <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <span>2/12/2024</span>
+                </div>
+            </div>
+
+            <div class="card hover:shadow-2xl border-gray-200 bg-gray-200">
+                <img src="/public/imgs/backend.jpg" alt="frontend" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m">
+                    <span class="font-bold ">BackEnd Developers</span>
+                    <span class="block text-gray-800 text-sm p-2
+                     bg-yellow-500 rounded-full w-20 text-center hover:bg-gray-400 cursor-pointer">
+                        Register
+                    </span>  
+                </div>
+                <div class="badge">
+                    <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <span>2/12/2024</span>
+                </div>
+            </div>
+
+            <div class="card hover:shadow-2xl border-gray-200 bg-gray-200">
+                <img src="/public/imgs/fullstack.jpg" alt="frontend" class="w-full h-32 sm:h-48 object-cover">
+                <div class="m">
+                    <span class="font-bold ">Fullstack Developers</span>
+                    <span class="block text-gray-800 text-sm p-2
+                     bg-yellow-500 rounded-full w-20 text-center hover:bg-gray-400 cursor-pointer">
+                        Register
+                    </span> 
+                </div>
+                <div class="badge">
+                    <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <span>2/12/2024</span>
+                </div>
+            </div>
+        </div>
+
+<!--Event Agenda-->
+        <div class="bg-gray-400 justify-center ">
+            <div class="text-4xl text-center font-bold p-4" >
+                <h2>
+                    Order of the Day
+                </h2>
+            </div>
+            <table class="border-zinc-800 table-fixed bg-gray-200 justify-center"><!--row or column-->
+                <thead>
+                    <tr>
+                        <th class="p-4 ">Time</th>
+                        <th class="">Activity</th>
+                        <th class="">Presenter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0800hrs</td>
+                        <td>Arrival and Registration</td>
+                        <td>Verification Team</td>
+                    </tr>
+                    <tr>
+                        <td>0900hrs</td>
+                        <td>Workshop and Group Allocation</td>
+                        <td>Mr. Mutibwa</td>
+                    </tr>
+                    <tr>
+                        <td>1000hrs</td>
+                        <td>Hackathon</td>
+                        <td>Team Leaders</td>
+                    </tr>
+                    <tr>
+                        <td>1400hrs</td>
+                        <td>Group Presentation and Marks Awarding</td>
+                        <td>Facilitators</td>
+                    </tr>
+                    <tr>
+                        <td>1600hrs</td>
+                        <td>Guest of Honor Speach</td>
+                        <td>Guest Of Honor</td>
+                    </tr>
+                    <tr>
+                        <td>1700hrs</td>
+                        <td>Awards</td>
+                        <td>Guest of Honor and Facilitators</td>
+                    </tr>
+                    <tr>
+                        <td>1800hrs</td>
+                        <td>Depature</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+<!--Guest speakers-->
+<div class="p-4 mt-2 md:text-4xl text-lg underline font-bold text-center">
+    <h2>
+        Guest Speakers
+    </h2>
+</div>
+<div class="mt-2 grid lg:grid-cols-3 gap-2  justify-evenly ">
+    <div class="card  bg-gray-400 m-2 rounded-md">
+        <img src="/public/imgs/guest.jpg" alt="frontend" class="w-full h-32 sm:h-48 object-cover">
+        <div class="">
+            <span class="font-bold my-2 text-gray-800">Minister of ICT</span>
+        </div>
+        <div class="badge">
+            <span>Thanks for your services</span>
+        </div>
+    </div>
+
+    <div class="card  bg-gray-400 m-2 rounded-md">
+        <img src="/public/imgs/president.jpg" alt="frontend" class="w-full h-32 sm:h-48 object-cover">
+        <div class="">
+            <span class="font-bold my-2 text-gray-800">Beatwise President</span>
+        </div>
+        <div class="badge">
+            <span>Thanks for your services</span>
+        </div>
+    </div>
+
+    <div class="card  bg-gray-400 m-2 rounded-md">
+        <img src="/public/imgs/woma.jpg" alt="frontend" class="w-full h-32 sm:h-48 object-cover">
+        <div class="">
+            <span class="font-bold my-2 text-gray-800">Winners Representative</span>
+        </div>
+        <div class="badge">
+            <span>Thanks for your services</span>
+        </div>
+    </div>
+
+
+</div>
+<!--RSVP Section Form with fields for names email and attandance confirmation-->
+        <form name="myform" action="/submit" method="post" id="section3"
+        class="bg-black text-gray-200 md:w-1/2 p-4 justify-center text-center">
+                <h2 class="md:text-3xl rounded-md">
+                    Please Register with Baati Services
+                </h2>
+                <div class="p-2">
+                    <label for="middle-name">Full Name</label><br>
+                    <input class="rounded-md md:w-1/2 p-1" placeholder="Middle Name">
+                </div>
+                <div class="p-2">
+                    <label for="gender">Gender</label><br>
+                    <select class="text-gray-600 rounded-md md:w-1/2 p-1">
+                        <option value="select">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="p-2">
+                    <label for="email">Email</label><br>
+                    <input class="rounded-md md:w-1/2 p-1" placeholder="Email">
+                </div>
+                <div class="p-4">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        Agree to terms and conditions
+                    </label><br>
+                </div>
+                <div >
+                    <button class="bg-yellow-500 w-1/2 rounded-md p-2 hover:bg-gray-400 cursor-pointer">
+                        Submit
+                    </button>
+                </div>
+        </Form>
+    </main>
+    <footer class="bg-gray-400 m-2 p-2 flex gap-2 justify-evenly">
+        <div class="md:w-14 w-8 hover:transition-shadow-lg">
+            <img src="/public/png/facebook.png" alt="facebook">
+        </div>
+
+        <div class="md:w-14 w-8 hover:transition-shadow-lg">
+            <img src="/public/png/instagram.png" alt="instagram">
+        </div>
+
+        <div class="md:w-14 w-8 hover:transition-shadow-lg">
+            <img src="/public/png/twitter.png" alt="twitter">
+        </div>
+
+        <div class="md:w-14 w-8 hover:transition-shadow-lg">
+            <img src="/public/png/youtube.png" alt="youtube">
+        </div>
+
+        <div class="md:w-14 w-8 hover:transition-shadow-lg">
+            <img src="/public/png/github.png" alt="github">
+        </div>
+
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
